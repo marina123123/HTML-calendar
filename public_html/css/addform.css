@@ -1,0 +1,84 @@
+.formadd {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 2px 15px 1px #bdbdbd;
+	border: 1px solid #ccc;
+	width: 303px;
+	height: 102px;
+	z-index: 9999;
+	position: absolute;
+	margin-top: 18px;
+        left: 0;
+}
+
+.formadd:before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 21px;
+	width: 0;
+	height: 0;
+	border-bottom: 12px solid #ccc;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+}
+
+.formadd:after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 22px;
+	width: 0;
+	height: 0;
+	border-bottom: 11px solid #fff;
+	border-right: 11px solid transparent;
+	border-left: 11px solid transparent;
+}
+
+	.formadd_cross {
+		float: right;
+		margin-top: 3px;
+		margin-right: 8px;
+		color: #a3a3a3;
+		background-color: #fff;
+		font: 13px arial;
+		display: inline-block;
+	}
+
+	.formadd_textbox {
+		display: inline-block;
+		float: left;
+		margin-left: 21px;
+		margin-top: 24px;
+	}
+
+	.formadd_textbox input {
+		border: 1px solid #d2d2d2;
+		box-shadow: 0 1px 1px 0 #d2d2d2 inset;
+		height: 24px;
+		width: 249px;
+		padding: 0;
+		margin: 0;
+		font: 12px arial;
+		padding-left: 6px;
+	}
+
+	.formadd_button {
+		display: inline-block;
+		float: left;
+		height: 16px;
+		width: 58px;
+		border-radius: 3px;
+		border: 1px solid #a6a6a6;
+		margin-left: 21px;
+		margin-top: 11px;
+		box-shadow: 0 -5px 15px 0 #ededed inset;
+		color: #000;
+		font: bold 11px arial;
+		text-align: center;
+	}
+
+		.formadd_button_text {
+			display: inline-block;
+			margin-top: 2px;
+		}

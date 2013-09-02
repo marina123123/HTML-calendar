@@ -1,0 +1,134 @@
+.page {
+	text-align: center;
+	min-width: 1000px;
+        margin-bottom: 20px;
+}
+
+/* ================================= Greyline ==================================== */
+
+.greyline {
+	text-align: center;
+	background-color: #f4f4f4;
+	border-bottom: 3px;
+	border-color: #d1d1d1;
+	box-shadow: 0 2px 3px 0 #d2d2d2;
+	height: 101px;
+	z-index: 1111;
+}
+
+	.greyline_fixsize {
+		background-color: #f4f4f4;
+		display: inline-block;
+		height: 101px;
+		width: 900px;
+	}
+
+		.greyline_fixsize_item {
+			display: inline-block;
+			margin-top: 56px;
+		}
+
+			.item-buttons {
+				position: relative;
+				float: left;
+				margin-right: 10px;
+			}
+
+			.item-searchbox {
+				float: right;
+			}
+
+				.magnifying-glass {
+					display: inline-block;
+					float: left;
+					margin-top: 3px;
+				}
+
+					.magnifying-glassbegin {
+						font-size: 1.2em;
+						display: inline-block;
+						width: 0.4em;
+						height: 0.4em;
+						border: 0.13em solid #b3b3b3;
+						position: relative;
+						border-radius: 0.35em;
+					}
+
+					.magnifying-glassend {
+						display: inline-block;
+						position: absolute;
+						right: -0.25em;
+						bottom: -0.1em;
+						border-width: 0;
+						background: #b3b3b3;
+						width: 0.35em;
+						height: 0.08em;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+					}
+
+				.searchform {
+					display: inline-block;
+					float: left;
+                                        position: relative;
+				}
+
+					.searchform input {
+						border-radius: 2px;
+						border: 1px solid #dddddd;
+						box-shadow: 0 1px 1px 0 #bdbdbd inset;
+						padding-bottom: 1px;
+						padding-left: 7px;
+						margin-left: 11px;
+						height: 23px;
+						width: 192px;
+					}
+                                        
+                                        .searchform input list {
+                                            width: 213px;
+                                            border: 1px solid #ccc;
+                                            background-color: #fff;
+                                            color: #000;
+                                        }
+
+/* ================================ Informline =================================== */
+
+	.informline {
+		margin: 3px;
+		text-align: center;
+		background-color: #ffffff;
+		height: 40px;
+	}
+
+		.informline_fixsize {
+			background-color: #ffffff;
+			display: inline-block;
+			height: 40px;
+			width: 900px;
+		}
+
+			.informline_fixsize_item {
+				display: inline-block;
+				float: left;
+				margin-top: 13px;
+			}
+
+			.greybuttons {
+				margin-left: 11px;
+			}
+                        
+                        .buttonadd {
+                                position: relative;
+                        }		
+
+			.arrows {
+				margin-top: 14px;
+			}
+
+			.databox {
+				font: 16px arial;
+				padding-left: 6px;
+				padding-right: 8px;
+			}

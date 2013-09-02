@@ -1,0 +1,226 @@
+.formaddtask{
+	display: none;
+	background-color: #fff;
+	height: 329px;
+	width: 302px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0 15px 2px #ccc;
+	position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        text-align: left;
+}
+
+.formaddtaskbefore {
+	content: '';
+	position: absolute;
+	top: 22px;
+	right: 100%;
+	width: 0;
+	height: 0;
+	border-right: 10px solid #ccc;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.formaddtaskafter {
+	content: '';
+	position: absolute;
+	top: 23px;
+	right: 100%;
+	width: 0;
+	height: 0;
+	border-right: 9px solid #fff;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+}
+
+.formaddtaskbefore2 {
+	content: '';
+	position: absolute;
+	top: 22px;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-left: 10px solid #ccc;
+	border-top: 11px solid transparent;
+	border-bottom: 11px solid transparent;
+}
+
+.formaddtaskafter2 {
+	content: '';
+	position: absolute;
+	top: 23px;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-left: 9px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+	.formaddtask_cross {
+		float: right;
+		margin-top: 7px;
+		margin-right: 10px;
+		color: #a3a3a3;
+		background-color: #fff;
+		font: 13px arial;
+		display: inline-block;
+	}
+
+	.formaddtask_task {
+		display: inline-block;
+		float: left;
+		margin-top: 23px;
+		margin-left: 21px;
+	}
+
+		.formaddtask_task input {
+			display: inline-block;
+			border: 1px solid #d2d2d2;
+			border-radius: 2px;
+			width: 249px;
+			height: 24px;
+			box-shadow: 0 1px 1px 0 #d2d2d2 inset;
+			padding: 0;
+			margin: 0;
+			padding-left: 6px;
+			font: 14px arial;
+		}
+
+		.formaddtask_task_task {
+			display: none;
+                        text-align: left;
+			width: 249px;
+			font: bold 16px arial;
+                        overflow: hidden;
+		}
+
+	.formaddtask_date, .formaddtask_names {
+		display: inline-block;
+		float: left;
+		margin-top: 5px;
+		margin-left: 21px;
+	}
+
+		.formaddtask_date input {
+			display: inline-block;
+			border: 1px solid #d2d2d2;
+			border-radius: 2px;
+			width: 249px;
+			height: 24px;
+			box-shadow: 0 1px 1px 0 #d2d2d2 inset;
+			padding: 0;
+			margin: 0;
+			padding-left: 6px;
+			font: 12px arial;
+		}
+
+		.formaddtask_names input {
+			display: inline-block;
+			border: 1px solid #d2d2d2;
+			border-radius: 2px;
+			width: 249px;
+			height: 24px;
+			box-shadow: 0 1px 1px 0 #d2d2d2 inset;
+			padding: 0;
+			margin: 0;
+			padding-left: 6px;
+			font: 12px arial;
+		}
+
+		.formaddtask_date_date, .formaddtask_names_names {
+			display: none;
+			width: 249px;
+			text-align: left;
+			font: 12px arial;
+                        overflow: hidden;
+		}
+
+			.formaddtask_names_names_heroes {
+				font: bold 11px arial;
+				color: #666;
+                                overflow: hidden;
+			}
+
+	.formaddtask_description {
+		display: inline-block;
+		float: left;
+		margin-top: 37px;
+		margin-left: 21px;
+	}
+
+        textarea {
+            display: inline-block;
+            border: 1px solid #d2d2d2;
+            border-radius: 2px;
+            width: 249px;
+            height: 114px;
+            box-shadow: 0 1px 1px 0 #d2d2d2 inset;
+            padding: 0;
+            margin: 0;
+            padding-left: 6px;
+            font: 12px arial;
+        }
+
+		.formaddtask_description_description {
+			display: none;
+			width: 249px;
+                        height: 115px;
+			text-align: left;
+			font: 12px arial;
+                        overflow-y: scroll;
+                        overflow-x: hidden;
+		}
+                
+                .formaddtask_description_description::-webkit-scrollbar {
+                        display: inline-block;
+                        width: 7px;
+                }
+
+                .formaddtask_description_description::-webkit-scrollbar-button {
+                        background-color: #fff;
+                }
+
+                .formaddtask_description_description::-webkit-scrollbar-thumb {
+                        background-color: #7a7a7a;
+                        border-radius: 3px;
+                }
+
+                .formaddtask_description_description::-webkit-scrollbar-track {
+                        background-color: #7a7a7a;
+                }
+
+                .formaddtask_description_description::-webkit-scrollbar-track-piece {
+                        background-color: #fff;
+                }
+
+		textarea {
+                    overflow: hidden;
+		}
+
+	.formaddtask_button {
+		display: inline-block;
+		float: left;
+		height: 16px;
+		border-radius: 3px;
+		border: 1px solid #a6a6a6;
+		margin-left: 21px;
+		margin-top: 22px;
+                /*margin-bottom: 26px;*/
+		box-shadow: 0 -5px 15px 0 #ededed inset;
+		color: #000;
+		font: bold 11px arial;
+	}
+
+	.formaddtask_button_delete {
+		margin-left: 12px;
+	}
+        .formaddtask_button_add {}
+        
+		.formaddtask_button_text {
+			display: inline-block;
+			margin: 2px 6px 2px 7px;
+		}

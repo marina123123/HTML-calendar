@@ -1,0 +1,81 @@
+.mainsearch {
+    background-color: #fff;
+	display: none;
+	width: 220px;
+	box-shadow: 0 0 10px 0 #ccc;
+	border: 1px solid #ccc;
+	max-height: 394px;
+	float: left;
+	overflow: hidden;
+	margin: 20px;
+	position: absolute;
+        left: -10px;
+        top: 18px;
+        z-index: 10000;
+}
+
+.search {
+    background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	width: 212px;
+	max-height: 394px;
+	color: #000;
+	text-align: left;
+	overflow-y: scroll;
+	position: relative;
+}
+
+.search::-webkit-scrollbar {
+	display: inline-block;
+	width: 7px;
+}
+
+.search::-webkit-scrollbar-button {
+	background-color: #fff;
+}
+
+.search::-webkit-scrollbar-thumb {
+	background-color: #7a7a7a;
+	border-radius: 3px;
+}
+
+.search::-webkit-scrollbar-track {
+	background-color: #7a7a7a;
+}
+
+.search::-webkit-scrollbar-track-piece {
+	background-color: #fff;
+}
+
+	.search_block {
+		display: inline-block;
+		height: 40px;
+		width: 188px;
+		margin: 3px;
+	}
+
+	.search_block:hover {
+		color: #fff;
+		background-color: #27a1ff;
+	}
+
+		.search_block_text-title {
+			color: #000;
+			font: bold 12px arial;
+			margin: 6px 8px 3px 8px;
+		}
+
+		.search_block_text-date {
+			color: #666;
+			font: bold 10px arial;
+			margin: 3px 8px 6px 8px;
+		}
+
+	.line {
+		width: 182px;
+		height: 1px;
+		background-color: #ebebeb;
+		margin-left: 7px;
+		margin-right: 7px;
+	}

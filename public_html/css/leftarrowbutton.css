@@ -1,0 +1,19 @@
+.leftarrowbutton {
+	background-color: #ffffff;
+	text-align: center;
+	height: 15px;
+	width: 15px;
+	border-radius: 2px;
+	box-shadow: 0 0 2px 0 #666666;
+        margin-left: 1px;
+}
+
+	.leftarrowbutton_text {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-top: 2px solid transparent;
+		border-right: 3px solid #666666;
+		border-bottom: 2px solid transparent;
+		margin-bottom: 3px;
+	}

@@ -1,0 +1,25 @@
+.greybutton {
+	display: table-cell;
+	background-color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	height: 15px;
+	width: 56px;
+	border-radius: 2px;
+	box-shadow: 0 0 2px 0 #666666;
+}
+
+	.greybutton_text {
+		display: inline-block;
+		color: #666666;
+		font: 12px arial;	
+	}
+
+.buttonpush {
+	background-color: #015da4;
+	box-shadow: 0 0 4px 0 #012f52;
+}
+
+	.buttonpush_text {
+		color: #b9c8dc;
+	}

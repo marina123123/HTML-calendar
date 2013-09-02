@@ -1,0 +1,85 @@
+.calendarblock {
+	margin-top: 6px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+	.calendarblock_fixsize {
+		background-color: #ffffff;
+		display: inline-block;
+		width: 900px;
+	}
+
+		.day {
+			width: 127px;
+			height: 127px;
+			border-top: 1px solid #ebebeb;
+			border-left: 1px solid #ebebeb;
+			float: left;
+			color: #999999;
+			font: 11px arial;
+			text-align: left;
+                        overflow: hidden;
+		}
+
+			.insidetext, .nameofday {
+					display: inline-block;
+					margin-top: 8px;
+					margin-left: 8px;
+                                        overflow: hidden;
+			}
+
+		.currentday {
+			background-color: #f4f4f4;
+			color: #666666;
+			font: bold 11px arial;
+		}
+                
+                .floatweek {
+                    display: none;
+                }
+
+		.daywithtask {
+			background-color: #c2e4fe;
+		}
+                
+                .dayaddtask {
+                    background-color: #e5f1f9;
+                    box-shadow: 0 0 1px 1px #8abfe9 inset;
+                }
+                
+
+			.titletask {
+				display: inline-block;
+				color: #666666;
+				font: bold 11px arial;
+				text-align: left;
+				margin-left: 8px;
+				margin-top: 5px;
+				margin-right: 3px;
+			}
+
+			.tasktext {
+				display: inline-block;
+				color: #666666;
+				font: 11px arial;
+				text-align: left;
+				margin-left: 8px;
+				margin-top: 5px;
+			}
+
+		.lastday {
+			border-right: 1px solid #ebebeb;
+		}
+
+		.firstweek {
+			margin-left: 4px;
+		}
+
+		.lastweek {
+			border-bottom: 1px solid #ebebeb;
+		}
+
+                .month {
+                    position: relative;
+                }

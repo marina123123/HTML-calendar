@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/greybutton.css">
+    <link rel="stylesheet" type="text/css" href="css/leftarrowbutton.css">
+    <link rel="stylesheet" type="text/css" href="css/rightarrowbutton.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/addform.css">
+    <link rel="stylesheet" type="text/css" href="css/formaddtask.css">
+    <link rel="stylesheet" href="css/calendar.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- ===================== Greyline ====================== -->
+        <div class="greyline">
+            <div class="greyline_fixsize">
+                <!-- ============= Button add ================ -->
+                <div class="greyline_fixsize_item item-buttons">
+                    <div class="button" id="buttonadd">
+                        <span class="button_text">Добавить</span>
+                    </div>
+
+                    <div class="formadd">
+                        <div class="formadd_cross">&times;</div>
+                        <div class="formadd_textbox">
+                            <input type="text" name="newtask" placeholder="5 марта, 14:00, День рождение" />
+                        </div>
+                        <div class="formadd_button"><span class="formadd_button_text">Создать</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============= Button update ================ -->
+                <div class="greyline_fixsize_item item-buttons">
+                    <div class="button" id="updatebutton">
+                        <span class="button_text">Обновить</span>
+                    </div>
+                </div>
+
+                <!-- ============= Search box ============== -->
+                <div class="greyline_fixsize_item item-searchbox">
+                    <!-- magnifying-glass -->
+                    <div class="magnifying-glass">
+                        <div class="magnifying-glassbegin">
+                            <div class="magnifying-glassend"></div>
+                        </div>
+                    </div>
+                    <!-- searchform -->
+                    <div class="searchform">
+                        <form>
+                            <input type="text" name="search" placeholder="Событие, дата или участник" />
+                        </form>
+
+                        <div class="mainsearch">
+                            <div class="search">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============== Informline ============== -->
+        <div class="informline">
+            <div class="informline_fixsize">
+                <!-- leftarrow -->
+                <div class="informline_fixsize_item arrows">
+                    <div class="leftarrowbutton">
+                        <span class="leftarrowbutton_text"></span>
+                    </div>
+                </div>
+                <!-- databox -->
+                <div class="informline_fixsize_item">
+                    <span class="databox"></span>
+                </div>
+                <!-- rightarrow -->
+                <div class="informline_fixsize_item arrows">
+                    <div class="rightarrowbutton">
+                        <span class="rightarrowbutton_text"></span>
+                    </div>
+                </div>
+                <!-- greybutton -->
+                <div class="informline_fixsize_item greybuttons">
+                    <div class="greybutton">
+                        <span class="greybutton_text">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ calendarblock ================= -->
+        <div class="calendarblock">
+            <div class="calendarblock_fixsize">
+                <!-- month -->
+                <ul class="month">
+                    <!-- formBIG -->
+                    <li class="formaddtask">
+                        <div class="formaddtaskbefore" id="b"></div>
+                        <div class="formaddtaskafter" id="a"></div>
+                        <div class="formaddtask_cross">&times;</div>
+                        <div class="formaddtask_task">
+                            <input type="text" name="task" placeholder="Событие" maxlength="50" />
+                            <div class="formaddtask_task_task"></div>
+                        </div>
+                        <div class="formaddtask_date">
+                            <input type="text" name="date" placeholder="День, месяц, год" />
+                            <div class="formaddtask_date_date"></div>
+                        </div>
+                        <div class="formaddtask_names">
+                            <input type="text" name="names" placeholder="Имена участников" maxlength="100" />
+                            <div class="formaddtask_names_names">
+                                <span class="formaddtask_names_names_heroes">Участники:<br/></span>
+                                <div class="formaddtask_names_names_value"></div>
+                            </div>
+                        </div>
+                        <div class="formaddtask_description">
+                            <textarea name="description" placeholder="Описание" /></textarea>
+                            <div class="formaddtask_description_description"></div>
+                        </div>
+                        <div class="formaddtask_button formaddtask_button_add">
+                            <span class="formaddtask_button_text">Готово</span>
+                        </div>
+                        <div class="formaddtask_button formaddtask_button_delete">
+                            <span class="formaddtask_button_text">Удалить</span>
+                        </div>
+                    </li>
+                    <!-- 1 -->
+                    <li class="day"><span class="nameofday">Понедельник, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day"><span class="nameofday">Вторник, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day"><span class="nameofday">Среда, </span> 
+                        <!-- currentday -->
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day"><span class="nameofday">Четверг, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day"><span class="nameofday">Пятница, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day"><span class="nameofday">Суббота, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <li class="day lastday"><span class="nameofday">Воскресенье, </span>
+                        <span class="insidetext firstweek"></span>
+                    </li>
+                    <!-- 2 -->
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastday"><span class="insidetext"></span>
+                    </li>
+                    <!-- 3 -->
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastday"><span class="insidetext"></span>
+                    </li>
+                    <!-- 4 -->
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastday"><span class="insidetext"></span>
+                    </li>
+                    <!-- 5 -->
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastday"><span class="insidetext"></span>
+                    </li>
+                    <!-- 6 -->
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastweek"><span class="insidetext"></span>
+                    </li>
+                    <li class="day lastday lastweek"><span class="insidetext"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr-2.6.2/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/storage.js"></script>
+    <script type="text/javascript" src="js/z_calendar.js"></script>
+</body>
+
+</html>
